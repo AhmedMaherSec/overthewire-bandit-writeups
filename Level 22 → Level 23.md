@@ -23,13 +23,13 @@ cat cronjob_bandit23
 ls -lh /usr/bin/cronjob_bandit23.sh
 cat /usr/bin/cronjob_bandit23.sh
 ```
-5. Executed the script to observe its behavior:
+5. Analyzed the script logic and manually reproduced the filename generation process for bandit23:
 ```
-/usr/bin/cronjob_bandit23.sh
+echo I am user bandit23 | md5sum | cut -d ' ' -f 1
 ```
-6. Found that the script writes the password to a temporary file in /tmp, then read the generated file:
+6. Used the generated hash to locate and read the file containing the password.
 ```
-cat /tmp/8169b67bd894ddbb4412f91573b38db3
+cat /tmp/8ca319486bfbbc3663ea0fbe81326349
 ```
 
 ## Result
@@ -37,5 +37,7 @@ The password for the next level was found in a temporary file created by a cron 
 
 ## Learning
 - I learned that cron is a time-based job scheduler used to automatically execute scripts at regular intervals.
+
 - I learned how to analyze scheduled jobs in /etc/cron.d/ to understand system automation tasks.
-- I learned that cron scripts may generate temporary files in /tmp that can contain sensitive information.
+
+- I learned that some scripts generate dynamic file paths based on username hashing (e.g., md5sum), which can be reproduced manually to retrieve hidden data.
