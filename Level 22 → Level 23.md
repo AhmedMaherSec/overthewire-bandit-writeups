@@ -1,0 +1,41 @@
+# Bandit Level 22 → Level 23
+
+## Goal
+The password for the next level is obtained by analyzing a cron job that writes it to a temporary file in `/tmp`.
+
+## Solution
+
+1. Connected to the server using SSH: 
+```
+ssh -p 2220 bandit22@bandit.labs.overthewire.org
+```
+2. Navigated to the cron configuration directory:
+```
+cd /etc/cron.d/
+ls
+```
+3. Identified the relevant cron job configuration:
+```
+cat cronjob_bandit23
+```
+4. Located the script executed by the cron job and inspected it:
+```
+ls -lh /usr/bin/cronjob_bandit23.sh
+cat /usr/bin/cronjob_bandit23.sh
+```
+5. Executed the script to observe its behavior:
+```
+/usr/bin/cronjob_bandit23.sh
+```
+6. Found that the script writes the password to a temporary file in /tmp, then read the generated file:
+```
+cat /tmp/8169b67bd894ddbb4412f91573b38db3
+```
+
+## Result
+The password for the next level was found in a temporary file created by a cron job.
+
+## Learning
+- I learned that cron is a time-based job scheduler used to automatically execute scripts at regular intervals.
+- I learned how to analyze scheduled jobs in /etc/cron.d/ to understand system automation tasks.
+- I learned that cron scripts may generate temporary files in /tmp that can contain sensitive information.
