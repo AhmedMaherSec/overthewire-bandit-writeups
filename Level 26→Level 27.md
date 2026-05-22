@@ -26,5 +26,5 @@ ls -lh bandit27-do
 The password for the next level was obtained using a setuid binary that executes commands with elevated privileges.
 
 ## Learning
-I learned that setuid binaries can allow users to execute commands with the permissions of the file owner.
+- I learned that setuid binaries can allow users to execute commands with the permissions of the file owner.
 
