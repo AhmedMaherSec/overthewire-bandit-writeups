@@ -11,7 +11,7 @@
 ## Overview
 This repository documents my journey through the **Bandit Wargame (OverTheWire)**.
 
-The goal was to solve challenges using Linux and system understanding — focusing on how data is hidden and retrieved in real environments.
+The goal was to solve challenges focused on Linux, SSH, Git, and basic system security concepts — focusing on how data is hidden and retrieved in real environments.
 
 [OverTheWire Bandit](https://overthewire.org/wargames/bandit/)
 ---
@@ -28,7 +28,7 @@ The goal was to solve challenges using Linux and system understanding — focusi
 - Understanding file system behavior
 - Identifying sensitive data locations
 
-### Git Exploitation Basics
+### Git Analysis Basics
 - Commit history analysis (`git log`, `git show`)
 - Branch exploration (`git branch -a`)
 - Tag inspection
@@ -47,7 +47,7 @@ The goal was to solve challenges using Linux and system understanding — focusi
 ---
 
 ## Final Note
-This journey was focused on understanding systems rather than exploiting vulnerabilities.
+This journey focused on understanding how Linux systems, permissions, shells, and repositories behave in security-oriented environments.
 
 > “Security starts with knowing how information is exposed, not how it is broken.”
 
