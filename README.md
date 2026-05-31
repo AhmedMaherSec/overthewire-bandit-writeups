@@ -13,7 +13,7 @@ This repository documents my journey through the **Bandit Wargame (OverTheWire)*
 
 The goal was to solve challenges using Linux and system understanding — focusing on how data is hidden and retrieved in real environments.
 
-[OverTheWire Bandit](https://overthewire.org/wargames/bandit/)
+<small><a href="https://overthewire.org/wargames/bandit/">OverTheWire</a></small>
 ---
 
 ## Skills Gained
