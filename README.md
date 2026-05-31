@@ -43,8 +43,7 @@ The goal was to solve challenges using Linux and system understanding — focusi
 
 ## Progress
 - Levels Completed: 33 / 33
-- Difficulty: Beginner → Intermediate
-- Focus Areas: Linux • Git • Shell Behavior • System Exploration
+
 ---
 
 ## Final Note
