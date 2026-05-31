@@ -40,13 +40,13 @@ The goal was to solve challenges using Linux and system understanding — focusi
 
 ---
 
-##  Progress
+## Progress
 - Levels Completed: 33 / 33
 - Difficulty: Beginner → Intermediate
 - Focus Areas: Linux • Git • Shell Behavior • System Exploration
 ---
 
-## 🏁 Final Note
+## Final Note
 This journey was focused on understanding systems rather than exploiting vulnerabilities.
 
 > “Security starts with knowing how information is exposed, not how it is broken.”
